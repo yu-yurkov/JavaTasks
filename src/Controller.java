@@ -9,13 +9,14 @@ public class Controller {
         //DataInput.numberOfTens();
 
         // конвертер валют
-        DataInput.curConverter();
+        //DataInput.curConverter();
 
         // среднее арифметическое трех чисел
-        DataInput.findAverage();
+        //DataInput.getAverage();
 
+        // вычисление процента p от суммы s
+        System.out.println(DataInput.getP(10, 200));
     }
-
 
 
 }

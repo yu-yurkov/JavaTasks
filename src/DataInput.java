@@ -19,6 +19,7 @@ public class DataInput {
 
     }
 
+    // находим младший разряд числа
     public static int getLsDigit(int num){
         return num % 10;
     }
@@ -70,20 +71,47 @@ public class DataInput {
     }
 
     // найти среднее арифметическое
-    public static void findAverage(){
+    public static void getAverage(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Ведите первое число: ");
-        int a = sc.nextInt();
+        System.out.println("Ведите несколько чисел через запятую: ");
+        String a = sc.next();
 
-        System.out.println("Ведите второе число: ");
-        int b = sc.nextInt();
-
-        System.out.println("Ведите третье число: ");
-        int c = sc.nextInt();
+        String[] arr = stringExplode(a);
 
         // вычисляем
-        System.out.println("Среднее арифметическое = " + (a+b+c)/3f);
+        System.out.println("Среднее арифметическое число = " + meanNumber(arr));
+    }
+
+    /**
+     * разделение строки по пробелу
+     * @param s
+     * @return
+     */
+    public static String[] stringExplode(String s){
+        String[] ex = s.split("\\p{Punct}");
+        return ex;
+    }
+
+    public static int meanNumber(String[] arr){
+        int num = arr.length;
+        int sum = 0;
+
+        for (int i = 0; i <num ; i++) {
+            sum += Integer.parseInt(arr[i]);
+        }
+
+        return sum/num;
+    }
+
+    /**
+     * вычисление процента
+     * @param p
+     * @param s
+     * @return
+     */
+    public static int getP(int p, int s){
+        return (s*p)/100;
     }
 
 }
