@@ -30,6 +30,7 @@ public class Controller {
         // проценты по вкладам
         //Arithmetic.interestOnDeposit();
 
+        // расчет расхода и стоимости краски
         Arithmetic.calcPaint();
     }
 
