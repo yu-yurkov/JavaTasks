@@ -28,7 +28,9 @@ public class Controller {
         //Arithmetic.delAverageDigit();
 
         // проценты по вкладам
-        Arithmetic.interestOnDeposit();
+        //Arithmetic.interestOnDeposit();
+
+        Arithmetic.calcPaint();
     }
 
 
