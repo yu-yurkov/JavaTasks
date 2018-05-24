@@ -15,7 +15,20 @@ public class Controller {
         //DataInput.getAverage();
 
         // вычисление процента p от суммы s
-        System.out.println(DataInput.getP(10, 200));
+        //System.out.println(DataInput.getP(10, 200));
+
+        /** Блок задач 2 **/
+        // поменять средние числа
+        //Arithmetic.changeDigit();
+
+        // сумма и разность чисел
+        //Arithmetic.sumNumbers();
+
+        // удалить среднее число
+        //Arithmetic.delAverageDigit();
+
+        // проценты по вкладам
+        Arithmetic.interestOnDeposit();
     }
 
 
