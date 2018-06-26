@@ -4,18 +4,17 @@ import java.util.Scanner;
 
 public class Main {
 
-
-
-
-
     public static void main(String[] args) {
         System.out.println("Система тестирования!");
 
         Db db = new Db();
         Questions[] questions = db.getQuestions();
 
+        Scanner sc = new Scanner(System.in);
+
+
         for (int i = 0; i < questions.length; i++) {
-            
+
             System.out.println("Вопрос №"+i+":"+questions[i].getText());
 
             System.out.println("Варианты ответа:");
@@ -27,8 +26,11 @@ public class Main {
                 System.out.println(choices[j].getChoise());
             }
 
+            
             System.out.println("Введите вариант ответа:");
 
+            // записываем введенный ответ
+            questions[i].setResult(sc.nextInt());
 
         }
 

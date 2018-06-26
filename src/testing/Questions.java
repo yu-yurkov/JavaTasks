@@ -18,6 +18,14 @@ public class Questions {
 
     }
 
+    public int getResult() {
+        return result;
+    }
+
+    public void setResult(int result) {
+        this.result = result;
+    }
+
     public Questions(String text){
         this.text= text;
     }

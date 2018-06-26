@@ -12,6 +12,9 @@ public class Choice {
         this.option = option;
     }
 
+    public Choice() {
+    }
+
     public String getChoise() {
         return choise;
     }
